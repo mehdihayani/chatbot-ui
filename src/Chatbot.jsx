@@ -4,7 +4,8 @@ export default function Chatbot() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const API_URL = "http://localhost:8000/chat";
+  /*const API_URL = "http://localhost:8000/chat";*/
+  const API_URL = "https://chatbot-api-7d1f.onrender.com/chat";
 
   const sendMessage = async () => {
     if (!input.trim() || loading) return;
